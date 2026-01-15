@@ -18,6 +18,6 @@ Author:
 Alexandra Osborn
 GitHub: https://github.com/AlexandraO0115
 
-Licens:
+License:
 
 This project is for educational purposes.
