@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 0.5em 0.75em;
+    font-size: 0.75rem;
+
+    background: grey;
+    color: navy;
+    text-decoration: none;
+    border-radius: 4px;
+
+    opacity: 0.75;
+}
+
+header {
+    background-color: honeydew;
+    color: navy;
+}
+
+body {
+    background-color: honeydew;
+    color: navy;
+}
+
+
+/* Notes container */
+ul.notes {
+    list-style: none;
+    padding: 40px;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Individual note item */
+ul.notes li {
+    position: relative;
+}
+
+/* Note card */
+.note {
+    width: 210px;
+    height: 210px;
+    padding: 1em;
+    background-color: orchid;
+    color: navy;
+
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.note-content {
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 0.5em;
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.75rem;
+    color: midnightblue;
+}
+
+/* Flex container for footer actions */
+.note-actions {
+    display: flex;
+    gap: 1.25em;
+    /* spacing between buttons */
+}
+
+/* Shared style for both Edit link and Delete button */
+.note-actions .action-link {
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 0.25em 0.5em;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* subtle background */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* Hover effect */
+.note-actions .action-link:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Color differences */
+.note-actions .edit-link {
+    color: midnightblue;
+}
+
+.note-actions .delete-link {
+    color: red;
+    border-color: rgba(192, 57, 43, 0.5);
+    /* optional: border matches color */
+}
+
+/* Create note card */
+.note-create {
+    background-color: rgba(229, 184, 227);
+    color: mediumslateblue;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* Hover effect */
+.note-create:hover {
+    transform: scale(1.05);
+}
+
+/* Big plus */
+.create-icon {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* Label */
+.create-text {
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+}
